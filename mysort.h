@@ -2,3 +2,4 @@
 #include"stdlib.h"
 void BubbleSort(int*, int);
 void InsertSort(int*, int);
+void SelectSort(int*, int);

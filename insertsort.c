@@ -5,7 +5,6 @@ void InsertSort(int *array, int length)
     {
         return;
     }
-    printf("insertsort\ni\n");
     int target;
     int i, j;
     for (i = 1; i < length; i++)
