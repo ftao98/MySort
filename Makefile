@@ -36,7 +36,9 @@ default: all
 
 # non-phony targets
 $(TARGET): $(OBJ)
-	$(CC) $(CCFLAG) -o $@ $?
+	$(CC) $(CCFLAG) -o $@ $(OBJ)
+#	@echo $(OBJ)
+#	$(CC) $(CCFLAG) -o $@ $?
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c*
 	$(CC) $(CCOBJFLAG) -o $@ $<
