@@ -50,7 +50,8 @@ $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c*
 # phony rules
 .PHONY: all
 all: $(TARGET)
-
+run:
+	./$(TARGET_NAME)
 .PHONY: debug
 debug: $(TARGET_DEBUG)
 
