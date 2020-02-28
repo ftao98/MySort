@@ -3,3 +3,4 @@
 void BubbleSort(int*, int);
 void InsertSort(int*, int);
 void SelectSort(int*, int);
+void ShellSort(int*, int);
