@@ -6,7 +6,8 @@ int main(){
     // InsertSort(array_test, length);
     // BubbleSort(array_test, length);
     // SelectSort(array_test, length);
-    ShellSort(array_test, length);
+    // ShellSort(array_test, length);
+    QuickSort(array_test, length);
     for (int i = 0; i < length; i++)
     {
         printf("%d ",array_test[i]);

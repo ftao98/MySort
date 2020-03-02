@@ -36,18 +36,18 @@ default: all
 
 # non-phony targets
 $(TARGET): $(OBJ)
-	$(CC) $(CCFLAG) -o $@ $(OBJ)
+	$(CC) $(CCFLAG) $(DBGFLAG) -o $@ $(OBJ)
 #	@echo $(OBJ)
 #	$(CC) $(CCFLAG) -o $@ $?
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c*
-	$(CC) $(CCOBJFLAG) -o $@ $<
+	$(CC) $(CCOBJFLAG) $(DBGFLAG) -o $@ $<
 
-#$(DBG_PATH)/%.o: $(SRC_PATH)/%.c*
-#	$(CC) $(CCOBJFLAG) $(DBGFLAG) -o $@ $<
+# $(DBG_PATH)/%.o: $(SRC_PATH)/%.c*
+# 	$(CC) $(CCOBJFLAG) $(DBGFLAG) -o $@ $<
 
-#$(TARGET_DEBUG): $(OBJ_DEBUG)
-#	$(CC) $(CCFLAG) $(DBGFLAG) $? -o $@
+# $(TARGET_DEBUG): $(OBJ_DEBUG)
+# 	$(CC) $(CCFLAG) $(DBGFLAG) $? -o $@
 
 # phony rules
 .PHONY: all
