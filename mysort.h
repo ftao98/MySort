@@ -5,3 +5,4 @@ void InsertSort(int*, int);
 void SelectSort(int*, int);
 void ShellSort(int*, int);
 void QuickSort(int*, int);
+void HeapSort(int*, int);
